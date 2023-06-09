@@ -38,7 +38,8 @@ nav ul{
 
 .box{
 	border: 2px solid black;
-/*	border-radius: 0.5rem; Enable this to have rounded borders*/
+/*	Enable the line below to make the lines a little curved*/
+/*	border-radius: 0.5rem;*/
 	font-size: 8vw;
 	display: flex;
 	justify-content: center;
@@ -94,7 +95,6 @@ nav ul{
 .line{
 	background-color: red;
 	height: 2px;
-/*	width: 30.15vw;*/
 	width: 0;
 	position: absolute;
 	transition: width 1s ease-in-out
