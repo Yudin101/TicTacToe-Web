@@ -28,7 +28,7 @@ const checkWin = () =>{
 		if ((boxtext[e[0]].innerText === boxtext[e[1]].innerText) && (boxtext[e[2]].innerText === boxtext[e[1]].innerText) && boxtext[e[0]].innerText !== "") {
 			document.querySelector('.info').innerText = boxtext[e[0]].innerText + " Won";
 			gamend = true;
-			document.querySelector('.imagebox').getElementsByTagName('img')[0].style.width = '145px'
+			document.querySelector('.gameOverBox').getElementsByTagName('h3')[0].style.opacity = "1";
 			gameOver.play();
 			document.querySelector('.line').style.width = "30.15vw"
 			document.querySelector('.line').style.transform = `translate(${e[3]}vw, ${e[4]}vw) rotate(${e[5]}deg)`;
@@ -64,6 +64,6 @@ reset.addEventListener('click', ()=>{
 	turn = "X";
 	gamend = false;
 	document.getElementsByClassName('info')[0].innerText = 'Turn for ' + turn;
-	document.querySelector('.imagebox').getElementsByTagName('img')[0].style.width = '0px'
+	document.querySelector('.gameOverBox').getElementsByTagName('h3')[0].style.opacity = "0"
 	document.querySelector('.line').style.width = "0"
 })

@@ -7,10 +7,10 @@
 
 body{
 	font-family: 'Roboto', sans-serif;
+	background-color: #110742;
 }
 
 nav{
-	background-color: #033280;
 	color: white;
 	height: 62px;
 	font-size: 27px;
@@ -37,7 +37,7 @@ nav ul{
 }
 
 .box{
-	border: 2px solid black;
+	border: 2px solid white;
 /*	Enable the line below to make the lines a little curved*/
 /*	border-radius: 0.5rem;*/
 	font-size: 8vw;
@@ -47,21 +47,33 @@ nav ul{
 }
 
 .box:hover{
-	background-color: #ebf1fa;
+	background-color: #0c0430;
 	cursor: pointer;
+}
+
+.boxtext{
+	color: white;
 }
 
 .gameInfo{
 	padding: 0 34px;
 }
 
+.info{
+	color: white;
+}
+
 .infoText{
+	color: white;
 	margin-bottom: 25px;
 }
 
-.imagebox img{
-	width: 0px;
-	transition: width 1s ease-in-out;
+.gameOverBox h3{
+	margin-top: 20px;
+	color: white;
+	font-size: 50px;
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
 }
 
 .br-0{
