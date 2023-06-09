@@ -33,11 +33,12 @@ nav ul{
 	display: grid;
 	grid-template-rows: repeat(3, 10vw);
 	grid-template-columns: repeat(3, 10vw);
+	position: relative;
 }
 
 .box{
 	border: 2px solid black;
-	border-radius: 0.5rem;
+/*	border-radius: 0.5rem; Enable this to have rounded borders*/
 	font-size: 8vw;
 	display: flex;
 	justify-content: center;
@@ -53,8 +54,13 @@ nav ul{
 	padding: 0 34px;
 }
 
-.imagebox{
-	display: none;
+.infoText{
+	margin-bottom: 25px;
+}
+
+.imagebox img{
+	width: 0px;
+	transition: width 1s ease-in-out;
 }
 
 .br-0{
@@ -71,4 +77,39 @@ nav ul{
 
 .bb-0{
 	border-bottom: 0px;
+}
+
+#reset{
+	margin: 0 23px;
+	padding: 9px;
+	background-color: #033280;
+	color: white;
+	border: 0px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 19px;
+	font-weight: bold;
+}
+
+.line{
+	background-color: red;
+	height: 2px;
+/*	width: 30.15vw;*/
+	width: 0;
+	position: absolute;
+	transition: width 1s ease-in-out
+}
+
+@media screen and (max-width: 800px){
+	.gameContainer{
+		flex-wrap: wrap;
+	}
+
+	.gameInfo{
+		margin-top: 34px;
+	}
+	.container{
+		grid-template-rows: repeat(3, 20vw);
+		grid-template-columns: repeat(3, 20vw);
+	}
 }
